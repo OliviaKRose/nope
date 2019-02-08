@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="js/script.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico'>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<!-- navbar logo -->
+	<a class="navbar-brand" href="#"><img class="logo" src="img/camera-clipart.jpg">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="discover" >Discover</a>
+			</li>
+			<li class="nav-item">
+				<a id="logOut" class="nav-link" href="login">Log Out</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<div id="mainSection">
+<!--- Newsfeed -->
+<div class="container-fluid">
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+		<!-- Cards -->
+		<!-- Need to differentiate between posts and users -->
+		<div class="container-fluid padding">
+		<div id = "bigBoiBox" class="row padding">
+			<div id="post1" class="col-md-4 card">
+				<img class="card-img-top" src="img/delia.jpg">
+				<div class="card-body">
+					<p id="username" class="card-title">doctorwhocomposer</p>
+					<p class="card-text">At the BBC Radiophonics Workshop</p>
+					<a class="like btn"><i class="like-btn fa fa-heart like"></i></a>
+					<a type="number" class="likes holder">0</a>
+				</div>
+			</div>
+			<div id="post2" class="col-md-4 card">
+				<img class="card-img-top" src="img/white-noise.jpg">
+				<div class="card-body">
+					<p id="username" class="card-title">doctorwhocomposer</p>
+					<p class="card-text">Electric Storm by White Noise</p>
+					<a class="like btn"><i class="like-btn fa fa-heart like"></i></a>
+					<a type="number" class="likes holder">0</a>
+				</div>
+			</div>
+			<div id="post3" class="col-md-4 card">
+				<img class"card-img-top" src="img/rsz_doctor-who.png">
+				<div class="card-body">
+					<p id="username" class="card-title">doctorwhocomposer</p>
+					<p class="card-text">Working on the Doctor Who theme tune</p>
+					<a class="like btn"><i class="like-btn fa fa-heart"></i></a>
+					<a type="number" class="likes holder">0</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Profile - only viewable on medium screens+ -->
+	<div class="col-xs-0 col-sm-0 col-md-3 col-lg-3 col-xl-3 profile-tab">
+	<div class="profile bg-light">
+		<img id="profilePic" class="profile-pic" src="img/delia-profile.jpg" alt="profile picture" class="center">
+		<h2 id="fullname" class="name">Delia Derbyshire</h2>
+		<p id="username" class="username" text="muted">@doctorwhocomposer</p>
+		<p id="bio" class="bio">About Me</p>
+		<a class="btn btn-outline-secondary edit" id="newPost">New Post</a>
+		<span id="postForm" class="popup">
+			<input id="newImg" type="file" class="form-control newPost" placeholder="Choose Image" aria-label="Image" aria-describedby="basic-addon1">
+			<input id="newCaption" type="text" class="form-control newPost" placeholder="Caption" aria-label="Caption" aria-describedby="basic-addon1">
+		</span>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

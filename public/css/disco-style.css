@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+
+/* logo */
+.logo {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* Navbar */
+.navbar {
+  padding: .8rem;
+}
+.navbar-toggler-right {
+  position: absolute;
+  right: 2%;
+  top: 30%;
+}
+
+.search {
+  position: relative;
+  left: 2%;
+}
+
+/* profile */
+.profile {
+  position: fixed;
+  padding: 2rem;
+  border-radius: 2%;
+}
+.name, .username, .bio {
+  padding-bottom: .05rem;
+  text-align:center;
+}
+.name{
+  padding-top: 1rem;
+}
+.edit, .profile-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-pic {
+  border-radius: 5%;
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+.more-padding{
+  padding: .2rem 2rem;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}

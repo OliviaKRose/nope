@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="js/script.js"></script>
+	<link href="css/login-style.css" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico'>
+</head>
+<body>
+
+<div class="container-fluid box">
+  <div id="container" class="box-2">
+    <div class="top input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">@</span>
+      </div>
+      <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Password</span>
+      </div>
+      <input id="password" type="password" class="form-control" placeholder="" aria-label="Password" aria-describedby="basic-addon1">
+    </div>
+    <div class="center input-group">
+      <button id="login" class="btn btn-outline-secondary" type="submit">Log In</button>
+    </div>
+    <div class="input-group center">
+      <p>Don't have an account? Click below to get started! </p>
+    </div>
+    <div class="bottom center profile-create input-group">
+      <button id="profile-create" onclick="loginPaddingChange()" class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#profile-creation">Create Account</button>
+      <div class="collapse" id="profile-creation">
+        <div class="profile-create top input-group mb-3">
+          <input id="newUser" type="text" class="form-control" placeholder="Username" areia-describedby="basic-addon1">
+        </div>
+        <div class="profile-create input-group mb-3">
+          <input id="newFore" type="text" class="form-control" placeholder="Forename" areia-describedby="basic-addon1">
+        </div>
+        <div class="profile-create input-group mb-3">
+          <input id="newSur" type="text" class="form-control" placeholder="Surname" areia-describedby="basic-addon1">
+        </div>
+        <div class="profile-create input-group mb-3">
+          <input id="newPass" type="password" class="form-control" placeholder="Password" areia-describedby="basic-addon1">
+        </div>
+        <div class="bottom profile-create center input-group">
+          <button id="profile-creator" class="btn btn-outline-secondary" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
